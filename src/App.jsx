@@ -2,10 +2,14 @@ import { useState } from 'react'
 import './App.css'
 import { productData } from './ProductData'
 import { ShoppingCart } from '../components/ShoppingCart/ShoppingCart'
+import { Pokemon } from '../components/Pokemon/Pokemon'
+import { PP2 } from '../components/PP2/PP2'
 
 function App() {
 
   // Manejo de estado como arreglo de objetos :)
+
+  //test
   const [cart, setCart] = useState([])
 
 
@@ -69,6 +73,9 @@ function App() {
     ></ShoppingCart>
     <h1>Product List</h1>
     {productList}
+
+    <Pokemon></Pokemon>
+    <PP2></PP2>
     </>
   )
 }
